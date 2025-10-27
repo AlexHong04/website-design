@@ -1,0 +1,248 @@
+<!-- Author: Tan Kok Hong
+Date:   22/9/2023
+
+Filename: delivery.html  -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Delivery</title>
+  <link rel="stylesheet" href="../css/delivery.css" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <script src="../js/delivery.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.28/dist/sweetalert2.all.min.js"></script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script src="../js/header_footer.js"></script>
+</head>
+
+<body>
+  <my-header></my-header>
+  <div class="container py-7">
+    <div class="ticket">
+      <div class="left">
+        <div class="image">
+        </div>
+        <div class="ticket-info">
+          <p class="date">
+            <span>Tuesday</span>
+            <span class="date-1">April 7</span>
+            <span>2022</span>
+          </p>
+          <div class="show-name">
+            <h1>ZOO Negara</h1>
+            <h2>Kuala Lumpur</h2>
+          </div>
+          <div class="time">
+            <p>9:00AM <span>TO</span> 12:00PM</p>
+            <p>DOORS <span>@</span> 8:30AM</p>
+          </div>
+          <p class="location">
+            <span>Jalan Taman Zooview</span>
+            <span>Selangor</span>
+          </p>
+        </div>
+      </div>
+      <div class="right">
+        <div class="right-info-container py-1 px-0">
+          <div class="show-name">
+            <h1>ZOO Negara</h1>
+          </div>
+          <div class="time">
+            <p>9:00AM<span>TO</span> 12:00PM</p>
+            <p>DOORS <span>@</span> 8:30</p>
+          </div>
+          <div class="barcode">
+            <img src="../images/QRcode.png" alt="QR code" />
+          </div>
+          <p class="ticket-number">123456789</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="py-7">
+      <div class="ticket">
+        <div class="left">
+          <div class="image">
+          </div>
+          <div class="ticket-info">
+            <p class="date">
+              <span>Wednesday</span>
+              <span class="date-1">May 5</span>
+              <span>2022</span>
+            </p>
+            <div class="show-name">
+              <h1>MAHA Tower</h1>
+              <h2>Langkawi</h2>
+            </div>
+            <div class="time">
+              <p>1:00PM <span>TO</span> 4:00PM</p>
+              <p>DOORS <span>@</span> 9:00AM</p>
+            </div>
+            <p class="location">
+              <span>Langkawi</span>
+              <span> Kedah</span>
+            </p>
+          </div>
+        </div>
+        <div class="right">
+          <div class="right-info-container py-1 px-0">
+            <div class="show-name">
+              <h1>MAHA Tower</h1>
+            </div>
+            <div class="time">
+              <p>1:00PM<span>TO</span> 4:00PM</p>
+              <p>DOORS <span>@</span> 9:00AM</p>
+            </div>
+            <div class="barcode">
+              <img src="../images/QRcode.png" alt="QR code" />
+            </div>
+            <p class="ticket-number">987654321</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="py-7">
+        <div class="ticket">
+          <div class="left">
+            <div class="image">
+            </div>
+            <div class="ticket-info">
+              <p class="date">
+                <span>Monday</span>
+                <span class="date-1">June 10</span>
+                <span>2022</span>
+              </p>
+              <div class="show-name">
+                <h1>LEGOLAND</h1>
+                <h2>Johor Bahru</h2>
+              </div>
+              <div class="time">
+                <p>9:00AM <span>TO</span> 7:00PM</p>
+                <p>DOORS <span>@</span> 8:30AM</p>
+              </div>
+              <p class="location">
+                <span>Persiaran Medini Utara 3</span>
+                <span>Johor</span>
+              </p>
+            </div>
+          </div>
+          <div class="right">
+            <div class="right-info-container py-1 px-0">
+              <div class="show-name">
+                <h1>LEGOLAND</h1>
+              </div>
+              <div class="time">
+                <p>9:00AM<span>TO</span> 7:00PM</p>
+                <p>DOORS <span>@</span> 8:30AM</p>
+              </div>
+              <div class="barcode">
+                <img src="../images/QRcode.png" alt="QR code" />
+              </div>
+              <p class="ticket-number">543216789</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="py-7">
+          <div class="ticket">
+            <div class="left">
+              <div class="image">
+              </div>
+              <div class="ticket-info">
+                <p class="date">
+                  <span>Friday</span>
+                  <span class="date-1">July 15</span>
+                  <span>2022</span>
+                </p>
+                <div class="show-name">
+                  <h1>A-famosa</h1>
+                  <h2>Melaka</h2>
+                </div>
+                <div class="time">
+                  <p>12:00PM <span>TO</span> 6:00PM</p>
+                  <p>DOORS <span>@</span> 9:00AM</p>
+                </div>
+                <p class="location">
+                  <span>Jln Parameswara, Banda Hilir</span>
+                  <span>Melaka</span>
+                </p>
+              </div>
+            </div>
+            <div class="right">
+              <div class="right-info-container py-1 px-0">
+                <div class="show-name">
+                  <h1>A-famosa</h1>
+                </div>
+                <div class="time">
+                  <p>12:00PM<span>TO</span> 6:00PM</p>
+                  <p>DOORS <span>@</span> 9:00AM</p>
+                </div>
+                <div class="barcode">
+                  <img src="../images/QRcode.png" alt="QR code" />
+                </div>
+                <p class="ticket-number">678912345</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="py-6">
+            <div class="ticket">
+              <div class="left">
+                <div class="image">
+                </div>
+                <div class="ticket-info">
+                  <p class="date">
+                    <span>Sunday</span>
+                    <span class="date-1">August 20</span>
+                    <span>2022</span>
+                  </p>
+                  <div class="show-name">
+                    <h1>Bird Park</h1>
+                    <h2>Penang</h2>
+                  </div>
+                  <div class="time">
+                    <p>9:00AM <span>TO</span> 3:00PM</p>
+                    <p>DOORS <span>@</span>8:30AM </p>
+                  </div>
+                  <p class="location">
+                    <span>Jalan Todak Seberang Jaya</span>
+                    <span>Penang</span>
+                  </p>
+                </div>
+              </div>
+              <div class="right">
+                <div class="right-info-container py-1 px-0">
+                  <div class="show-name">
+                    <h1>Bird Park</h1>
+                  </div>
+                  <div class="time">
+                    <p>9:00AM <span>TO</span> 3:00PM</p>
+                    <p>DOORS <span>@</span> 8:30AM </p>
+                  </div>
+                  <div class="barcode">
+                    <img src="../images/QRcode.png" alt="QR code" />
+                  </div>
+                  <p class="ticket-number">789654321</p>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="remark py-6">
+              <p><span>&#8680;</span>You can send an email for the receipt<span>&#8678;</span></p>
+            </div>
+
+            <div class="btn">
+              <button class="submit" type="submit" value="send Email" onclick="sendEmail()">Send email</button>
+              &nbsp;
+              <button class="submit" type="submit" onclick="location.href='track_order.html'">Next</button>
+            </div>
+          </div>
+          <my-footer></my-footer>
+</body>
+
+</html>

@@ -1,0 +1,188 @@
+ /* Author: Tan Kok Hong
+Date:   22/9/2023
+
+Filename: delivery.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.ticket {
+    margin: auto;
+    display: flex;
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.left {
+    display: flex;
+    width: 75%;
+}
+
+/* photo */
+.image {
+    height: 240px;
+    width: 250px;
+    background-image: url("../images/tourism.png");
+    background-size: contain;
+    opacity: 0.85;
+}
+
+.ticket-info {
+    padding: 10px 30px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+}
+
+/* date */
+.date {
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    padding: 5px 0;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.date span {
+    width: 100px;
+}
+
+.date span:first-child {
+    text-align: left;
+}
+
+.date span:last-child {
+    text-align: right;
+}
+
+.date .date-1 {
+    font-size: 20px;
+}
+
+.show-name {
+    font-size: 32px;
+    font-family: apple-system;
+}
+
+.show-name h1 {
+    font-size: 35px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+}
+
+.time {
+    padding: 10px 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-weight: 700;
+}
+
+.time span {
+    font-weight: 400;
+    color: gray;
+}
+
+.left .time {
+    font-size: 16px;
+}
+
+
+.location {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding-top: 8px;
+    border-top: 1px solid gray;
+}
+
+.location .separator {
+    font-size: 20px;
+}
+
+.right {
+    width: 25%;
+    border-left: 1px dashed #404040;
+}
+
+.right .right-info-container {
+    height: 250px;
+    padding: 10px 10px 10px 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.right .show-name h1 {
+    font-size: 18px;
+}
+
+.barcode {
+    height: 100px;
+}
+
+.barcode img {
+    height: 100%;
+}
+
+.right .ticket-number {
+    color: gray;
+}
+
+.product-img{
+    width:100px;
+    height:100px;
+    right:unset;
+}
+
+.remark {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-style: italic;
+}
+
+.remark span {
+    font-size: 30px;
+    color: rgb(56, 143, 201);
+}
+
+
+/* button */
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.submit {
+    border: white;
+    color: white;
+    padding: 10px 30px;
+    font-size: 16px;
+    background-color: rgb(255, 76, 76);
+    border: 2px solid rgb(255, 76, 76);
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.submit:hover{
+    background-color: white;
+    color:rgb(255, 76, 76);
+}
+

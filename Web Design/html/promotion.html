@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Promotion</title>
+    <link rel="stylesheet" href="./../css/promotion.css" />
+    <script src="./../js/header_footer.js"></script>
+  </head>
+
+  <body>
+    <my-header></my-header>
+    <form class="redemption">
+      <legend>Code Redeem:</legend>
+      <label for="account">Account:</label>
+      <input type="text" id="account" name="account" required />
+      <br /><br />
+      <label for="code">Redemption Code:</label>
+      <input type="text" id="code" name="code" required />
+      <br /><br />
+      <input class="submit" type="submit" value="Done" />
+      <input class="submit" type="reset" value="Cancel" />
+    </form>
+
+    <div class="moreOption">
+      <a class="option" href="#">HOTEL</a>
+      <a class="option" href="#">CRUISE</a>
+      <a class="option" href="#">TOURS</a>
+      <a class="option" href="#">VOUCHER</a>
+    </div>
+
+    <div>
+      <aside class="contentContainer">
+        <nav class="content">
+          <ul class="subContent">
+            <h2>Table Of Content</h2>
+            <p>Current Available Discount:</p>
+            <ol>
+              <li>Black-friday-sales</li>
+              <br />
+              <li>First-purchase</li>
+              <br />
+              <li>Birthday-month-offer</li>
+              <br />
+            </ol>
+            <p>Upcoming Event</p>
+            <ol>
+              <li>Halloween-month</li>
+              <br />
+              <li>Deepavali-offer</li>
+              <br />
+              <li>Christmas-offer</li>
+              <br />
+            </ol>
+          </ul>
+        </nav>
+      </aside>
+
+      <div class="catalog">
+        <section>
+          <div class="catalog-title">
+            <h2>Black-Friday-Sales</h2>
+            <a class="moreDetails" href="../html/Index.html">shop more ></a>
+          </div>
+          <div class="offersWrapper">
+            <div class="offers">
+              <img src="./../images/penangO.jpeg" alt="penang" />
+              <p><b>40% OFF</b></p>
+              <p>40% off now for the entire trip to Penang!</p>
+              <a class="offerLink" href="../html/Penang.html">BUY NOW</a>
+            </div>
+
+            <div class="offers">
+              <img
+                src="./../images/pulau_perhentian.jpeg"
+                alt="Pulau Langkawi"
+              />
+              <p><b>30% OFF</b></p>
+              <p>
+                Take the chance now to enjoy 30% discount to Pulau Langkawi!
+              </p>
+              <a class="offerLink" href="../html/Langkawi.html">BUY NOW</a>
+            </div>
+
+            <div class="offers">
+              <img
+                src="./../images/genting_highland.jpeg"
+                alt="Genting Highland"
+              />
+              <p><b>45% OFF</b></p>
+              <p>Perfect price for a perfect getaway!</p>
+              <a class="offerLink" href="../html/Langkawi.html">BUY NOW</a>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div class="catalog-title">
+            <h2>First-Time-Purchase</h2>
+            <a class="moreDetails" href="../html/Index.html">shop more ></a>
+          </div>
+          <div class="firstWrapper">
+            <img
+              class="firstPurchase"
+              src="./../images/first_purchase.jpeg"
+              alt="first_purchase"
+            />
+            <aside class="firstDescription">
+              <p>Sign up now to get 15% off for any travelling package</p>
+              <a class="signUp" href="../html/membership.html">Sign Up</a>
+            </aside>
+          </div>
+        </section>
+
+        <section>
+          <div class="catalog-title">
+            <h2>Birthday-Month-Offer</h2>
+            <a class="moreDetails" href="../html/Index.html">shop more ></a>
+          </div>
+          <div class="birthdayMonth">
+            <img
+              class="birthdayPic"
+              src="./../images/birthday.jpeg"
+              alt="birthday"
+            />
+            <aside class="birthdayOffer">
+              <div class="birthdayDescription">
+                <p>SPECIAL DISCOUNT</p>
+                <p>
+                  Birthday Treat! Get a surprising discount on all packages in
+                  your birthday month!
+                </p>
+                <p>*Offer can be use ONCE only*</p>
+                <a class="moreInfo" href="#">More Info</a>
+              </div>
+            </aside>
+          </div>
+        </section>
+      </div>
+    </div>
+  </body>
+  <my-footer></my-footer>
+</html>

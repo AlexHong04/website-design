@@ -1,0 +1,174 @@
+.redemption {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 2%;
+  border-color: whitesmoke;
+  background-color: rgb(255, 192, 192);
+  font-size: large;
+  padding: 15px 0;
+}
+
+.submit {
+  border: white;
+  color: white;
+  padding: 10px 25px;
+  font-size: medium;
+  margin: 4px 2px;
+  background-color: red;
+  border-radius: 10px;
+}
+
+.moreOption {
+  text-align: center;
+  margin: 20px;
+}
+
+.moreOption button {
+  border: white;
+  color: black;
+  padding: 10px 10px;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 10px;
+  gap: 10px;
+}
+
+.moreDetails {
+  text-decoration: none;
+}
+
+.contentContainer {
+  width: 24%;
+  background-color: rgb(243, 243, 243);
+  display: inline-block;
+  vertical-align: top;
+}
+
+.content {
+  padding-bottom: 360%;
+}
+
+a.option {
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+  width: calc((100% / 4) - 150px);
+  font-weight: bold;
+}
+
+a.option:hover {
+  color: red;
+  transform: scale(1) translateX(5px);
+  box-shadow: 10px 10px lightpink;
+  border-radius: 50%;
+}
+
+.catalog {
+  width: calc(75% - 15px);
+  display: inline-block;
+  padding-left: 15px;
+}
+
+.catalog-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.catalog-title > a {
+  line-height: 66px;
+}
+
+.offersWrapper .contentContainer {
+  display: inline-block;
+  width: 100%;
+}
+
+.offers {
+  display: inline-block;
+  width: calc((96% / 3) - 15px);
+  padding: 10px;
+  background-color: rgb(255, 192, 192);
+}
+
+.offers img {
+  width: 100%;
+}
+
+.offerLink {
+  background-color: white;
+  color: red;
+  border: 2px solid red;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.offerLink:hover {
+  background-color: red;
+  color: white;
+}
+
+.firstWrapper {
+  background-color: rgb(255, 209, 166);
+  display: flex;
+  justify-content: space-between;
+}
+
+.firstWrapper > img {
+  width: 50%;
+}
+
+.firstDescription {
+  margin: 2%;
+  /* float: right; */
+}
+
+.firstWrapper .firstDescription {
+  display: inline-block;
+  /* width: calc((100% / 3) - 50px); */
+}
+
+.signUp {
+  border: white;
+  color: white;
+  padding: 15px;
+  font-size: 16px;
+  margin-top: 10px;
+  background-color: red;
+  text-decoration: none;
+  display: block;
+  width: 100px;
+  text-align: center;
+}
+.birthdayMonth {
+  position: relative;
+}
+
+.birthdayMonth > img {
+  width: 100%;
+}
+
+.birthdayOffer {
+  color: black;
+  float: inline-start;
+}
+
+.birthdayDescription {
+  position: absolute;
+  background-color: rgb(255, 205, 80);
+  top: 0;
+  bottom: 4px;
+  right: 0;
+  width: 40%;
+}
+
+.birthdayDescription > p {
+  margin: 5%;
+}
+
+.moreInfo {
+  margin: 5%;
+  text-decoration: none;
+  font-weight: bold;
+}

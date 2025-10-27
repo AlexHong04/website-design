@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html class="html">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0" />
+    <title>Look Travel - Activities, tour, attraction and things to do</title>
+    <link href="./../css/layouts.css" rel="stylesheet" />
+    <script src="./../js/header_footer.js"></script>
+  </head>
+  <style>
+    .place {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 20px;
+    }
+
+    .place div {
+      text-align: center;
+      position: relative; /* 为了容纳悬浮的按钮 */
+    }
+
+    .button {
+      transition: transform 0.3s ease; /* 添加一个过渡效果，以在悬停时平滑过渡 */
+    }
+
+    /* 当鼠标悬停在<div>上时，按钮悬浮 */
+    .place div:hover .button {
+      transform: translateY(-10px); /* 向上悬浮10像素 */
+    }
+
+    .button {
+      border: none;
+      color: black;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: flex;
+      float: left;
+      font-size: 16px;
+      margin-left: 15%;
+      cursor: pointer;
+      background-color: rgb(183, 251, 251);
+      border-radius: 15px;
+    }
+  </style>
+  <body>
+    <my-header></my-header>
+    <div class="membership">
+      <div>
+        <img src="./../images/profile-picture-973460_1280.webp" alt="profile" />
+      </div>
+      <div class="container">
+        <div class="lookreward">
+          Free Rewards
+          <p class="p">Get rewarded for exploring and enjoy exclusive deals</p>
+        </div>
+        <div class="lookcredit">
+          <strong>Free Credit</strong>
+          <div>
+            <p class="lv1">
+              Earn up to 1% back in Free credits as an Explorer
+              <a class="levela" href="lookcredit.html">Lv1 Gold</a>
+            </p>
+          </div>
+          <div>
+            <p class="lv2">
+              Earn up to 3% back in Free credits when you reach Gold
+              <a class="levela" href="lookcredit.html">Lv2 Gold</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="place">
+          <div>
+            <a href="renewal.html"
+              ><button type="button" class="button">Renewal</button></a
+            >
+          </div>
+          <div>
+            <a href="register.html"
+              ><button type="button" class="button">Register</button></a
+            >
+          </div>
+          <div>
+            <a href="login.html"
+              ><button type="button" class="button">Login</button></a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <my-footer></my-footer>
+  </body>
+</html>

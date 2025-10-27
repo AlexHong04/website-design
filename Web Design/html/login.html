@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Login Page </title>
+    <link href="./../css/layouts.css" rel="stylesheet" />
+    <script src="./../js/header_footer.js"></script>
+
+    <style>
+      h1 {
+        margin-top: 80px;
+      }
+
+      button {
+        background-color: #4caf50;
+        width: 100%;
+        color: white;
+        padding: 15px;
+        margin: 10px 0px;
+        border: none;
+        cursor: pointer;
+      }
+      .cancelbtn {
+        width: auto;
+        padding: 10px 18px;
+        margin: 10px 5px;
+      }
+      h1 {
+        color: #0077cc;
+      }
+    </style>
+  </head>
+  <body>
+    <my-header></my-header>
+    <center><h1>Login</h1></center>
+    <form>
+      <div class="container1">
+        <label>Username :</label>
+        <input
+          type="text"
+          placeholder="Enter Username"
+          name="username"
+          required
+        />
+        <label>Password :</label>
+        <input
+          type="text"
+          placeholder="Enter Password"
+          name="password"
+          required
+        />
+        <button type="submit">Login</button>
+        <p>* If you want to return to the home page, please click the logo.</p>
+      </div>
+    </form>
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <my-footer></my-footer>
+  </body>
+</html>

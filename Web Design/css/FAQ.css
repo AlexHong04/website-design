@@ -1,0 +1,135 @@
+
+.center-contain
+{
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+    
+
+
+.top-contain {
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+
+
+.top-text 
+{
+    text-align: center;
+    font-size: xx-large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 10px;
+}
+
+
+.questionSection {
+  margin: 20px;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: -40px;
+    margin-bottom: 30px;
+    
+
+}
+
+.searchInfo {
+  padding: 10px 15px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 300px;
+  outline: none;
+}
+
+.searchButton {
+  padding: 10px 20px;
+  background-color: rgb(198, 164, 199);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.searchButton:hover {
+  background-color: rgb(168, 135, 169);
+}
+
+.searchButton:active {
+  transform: scale(0.95);
+}
+
+.questionItem {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.questionItem a {
+  padding: 15px 20px;
+  background-color: rgb(188, 155, 189);
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  transition: background-color 0.3s;
+  font-size: 1.5rem;
+  font-family: "Courier New", Courier, monospace;
+  width: 720px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.questionTitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.questionButton {
+  display: flex;
+  width: 51px;
+  height: 51px;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(188, 155, 189);
+  border: none;
+  font-size: xx-large;
+  font-weight: bolder;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 5px;
+  margin-left: 12px;
+  margin-bottom: 20px;
+}
+
+.questionButton:hover {
+  background-color: rgb(168, 135, 169);
+}
+
+.question-description {
+  display: none;
+  font-size: large;
+  font-weight: bold;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  margin-bottom: 20px;
+  margin-top: -20px;
+}

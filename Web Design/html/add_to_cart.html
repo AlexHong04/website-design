@@ -1,0 +1,125 @@
+ <!-- Author: Tan Kok Hong
+Date:   15/9/2023
+
+Filename: addtocart.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>add_to_cart</title>
+    <link href="../css/add_to_cart.css"  rel="stylesheet" >
+    <link href="../css/style.css"  rel="stylesheet">
+    <script src="../js/header_footer.js"></script>
+</head>
+<body>
+    <my-header></my-header>
+    <div class="header py-6">
+        <div class="overlay"></div>
+        <img class="headerBanner" src="../images/shopcart.jpg" alt="shop_cart"/>
+        <h1 class="addtocart">Shop cart</h1>
+    </div>
+    <div class="container py-3">
+        <table class="border">
+            <thead class="border-header">
+                <tr>
+                    <th></th>
+                    <th>Product</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Subtotal</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="product-remove">
+                        <a href="#" class="remove" aria-label="Remove" data-product_id="" data-product_sku="">×</a>
+                    </td>
+                    <td>ZOO Negara in Kuala Lumpur </td>
+                    <td>RM35.00</td>
+                    <td>
+                        <input class="qty" name="Quantity" id="quantityBox" type="number" min="1" max="100" value="1"/>
+                    </td>
+                    <td>RM35.00</td>
+                </tr>
+                <tr>
+                    <td class="product-remove">
+                        <a href="#" class="remove" aria-label="Remove" data-product_id="" data-product_sku="">×</a>
+                    </td>
+                    <td>MAHA Tower Ticket in Langkawi </td>
+                    <td>RM35.00</td>
+                    <td >
+                        <input class="qty" name="Quantity" id="quantityBox" type="number" min="1" max="100" value="1"/>
+                    </td>
+                    <td>RM35.00</td>
+                </tr>
+                <tr>
+                    <td class="product-remove">
+                        <a href="#" class="remove" aria-label="Remove" data-product_id="" data-product_sku="">×</a>
+                    </td>
+                    <td>LEGOLAND in Johor Bahru</td>
+                    <td>RM90.00</td>
+                    <td >
+                        <input class="qty" name="Quantity" id="quantityBox" type="number" min="1" max="100" value="1"/>
+                    </td>
+                    <td>RM90.00</td>
+                </tr>
+                <tr>
+                    <td class="product-remove">
+                        <a href="#" class="remove" aria-label="Remove" data-product_id="" data-product_sku="">×</a>
+                    </td>
+                    <td>A-famosa in Melaka</td>
+                    <td>RM45.00</td>
+                    <td >
+                        <input class="qty" name="Quantity" id="quantityBox" type="number" min="1" max="100" value="1"/>
+                    </td>
+                    <td>RM45.00</td>
+                </tr>
+                <tr>
+                    <td class="product-remove">
+                        <a href="#" class="remove" aria-label="Remove" data-product_id="" data-product_sku="">×</a>
+                    </td>
+                    <td>Bird Park in Penang</td>
+                    <td>RM45.00</td>
+                    <td >
+                        <input class="qty" name="Quantity" id="quantityBox" type="number" min="1" max="100" value="1"/>
+                    </td>
+                    <td>RM45.00</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                
+            </tfoot>
+        </table>
+    </div>
+    <div class="checkout py-1">
+        <table class="checkoutborder">
+            <h2 class="title">Cart Total</h2>
+            <tbody>
+                <tr>
+                    <th>Subtotal</th>
+                    <td data-title="Subtotal">RM250</td>
+                </tr>
+                <tr class="totals-Service">
+                    <th>Service</th>
+                    <td data-title="Service">
+                        <ul id="Service" class="Service-methods">
+                            <input name="Tax" id="Tax" type="checkbox" value="15" required/>
+                            <label for="Tax">Tax: <span>RM</span>15</span></label>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Total</th>
+                    <td data-title="total">RM265</td>
+                </tr> 
+            </tbody>                                                           
+        </table>
+        <div class="btn-checkout">
+            <button class="submit-btn" type="submit" onclick="location.href='payment.html'">Checkout</button>
+        </div>
+    </div>
+    <my-footer></my-footer>
+</body>
+</html>

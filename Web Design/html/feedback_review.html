@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Review_feedback</title>
+    <link rel="stylesheet" href="../css/feedback_review.css" />
+    <script src="./../js/header_footer.js"></script>
+    <script src="./../js/feedback_review.js"></script>
+    <script src="./../js/review_only.js"></script>
+  </head>
+
+  <body>
+    <my-header></my-header>
+    <h1>Review</h1>
+    <div class="testimonialsWrapper">
+      <div id="page1">
+        <div class="testimonials">
+          <div class="profile">
+            <img class="profile_pic" src="../images/lim.jpeg" alt="chick" />
+            <p class="name"><b>Lim Kah Lok</b></p>
+          </div>
+          <p class="rated-star">★★★★<span class="unrated-star">★</span></p>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Praesentium obcaecati quaerat, corrupti numquam modi rerum ad
+            placeat sit deleniti nisi sequi repudiandae nulla libero consectetur
+          </p>
+        </div>
+        <div class="testimonials">
+          <img class="profile_pic" src="./../images/cloud.png" alt="cloud" />
+          <p class="name"><b>Rizz Lee</b></p>
+          <p class="rated-star">★★★<span class="unrated-star">★★</span></p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure eaque
+            rem consequuntur aliquam, laudantium praesentium reiciendis iste
+            culpa odit voluptatem assumenda impedit odio rerum.
+          </p>
+        </div>
+        <div class="testimonials">
+          <img class="profile_pic" src="./../images/panda.png" alt="panda" />
+          <p class="name"><b>Misya Monefa</b></p>
+          <p class="rated-star">★★★★<span class="unrated-star">★</span></p>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius
+            repellendus atque id aut hic nisi perferendis dolor doloremque est,
+            ipsam provident qui molestiae optio dicta facilis, voluptate
+            dignissimos accusamus cumque!
+          </p>
+        </div>
+        <div class="testimonials">
+          <img
+            class="profile_pic"
+            src="./../images/hedgehog.png"
+            alt="hedgehog"
+          />
+          <p class="name"><b>Akma</b></p>
+          <p class="rated-star">★★★★★</p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero sint,
+            earum sed voluptas voluptates ad, iure ea sapiente id, deserunt
+            blanditiis officiis aperiam quae sit. Autem nobis repellat delectus
+            assumenda.
+          </p>
+        </div>
+      </div>
+
+      <!-- page 2 -->
+      <div id="page2" style="display: none">
+        <div class="testimonials">
+          <div class="profile">
+            <img class="profile_pic" src="./../images/chick.png" alt="chick" />
+            <p class="name"><b>Amanda</b></p>
+          </div>
+          <p class="rated-star">★★★★<span class="unrated-star">★</span></p>
+          <p>
+            Ea accusamus quasi cupiditate voluptatum asperiores eligendi, odio
+            cumque voluptate eaque aliquid. Ullam explicabo dolorem officia
+            autem, nemo pariatur natus eius ratione.
+          </p>
+        </div>
+        <div class="testimonials">
+          <img class="profile_pic" src="./../images/cloud.png" alt="cloud" />
+          <p class="name"><b>Chow Kenji</b></p>
+          <p class="rated-star">★★★<span class="unrated-star">★★</span></p>
+          <p>
+            Vero eaque provident accusantium. Adipisci laudantium commodi ex
+            impedit reprehenderit, excepturi minima. Sed tempore quidem error.
+            Quo, ab dicta? Corporis, officiis tempora!
+          </p>
+        </div>
+        <div class="testimonials">
+          <img class="profile_pic" src="./../images/panda.png" alt="panda" />
+          <p class="name"><b>Nesha</b></p>
+          <p class="rated-star">★★★★<span class="unrated-star">★</span></p>
+          <p>
+            Voluptatem cumque eos magnam nulla quidem ad, est veritatis
+            incidunt, harum placeat pariatur quaerat possimus veniam minima non
+            saepe nam corporis nemo?
+          </p>
+        </div>
+        <div class="testimonials">
+          <img
+            class="profile_pic"
+            src="./../images/hedgehog.png"
+            alt="hedgehog"
+          />
+          <p class="name"><b>Chloe</b></p>
+          <p class="rated-star">★★★★★</p>
+          <p>
+            Repudiandae soluta explicabo quibusdam pariatur accusantium velit
+            iste cum dolorem enim! Reprehenderit odit assumenda non provident
+            nobis quibusdam deserunt nulla, maiores tempore.
+          </p>
+        </div>
+      </div>
+
+      <div class="pagination">
+        <button id="prevPage" onclick="pageNav(1)">&#8678; page</button>
+        <div class="showCount">
+          <p id="countPage">1</p>
+        </div>
+        <button id="nextPage" onclick="pageNav(2)">page &#8680;</button>
+      </div>
+    </div>
+
+    <h1>Customer Satisfaction Survey</h1>
+    <h3>We appreciate your feedback!</h3>
+    <div class="container">
+      <form action="#">
+        <label for="name">Name:</label>
+        <input class="input" type="text" id="name" required />
+        <label for="email">E-mail:</label>
+        <input class="input" type="text" id="email" required />
+        <label for="p_number">Phone:</label>
+        <input class="input" type="tel" id="p_number" required />
+        <p>How satisfy are you base on the booking process?</p>
+
+        <div class="rate">
+          <input type="radio" id="star5" name="rate" value="5" />
+          <label for="star5" title="text">5</label>
+          <input type="radio" id="star4" name="rate" value="4" />
+          <label for="star4" title="text">4</label>
+          <input type="radio" id="star3" name="rate" value="3" />
+          <label for="star3" title="text">3</label>
+          <input type="radio" id="star2" name="rate" value="2" />
+          <label for="star2" title="text">2</label>
+          <input type="radio" id="star1" name="rate" value="1" />
+          <label for="star1" title="text">1</label>
+          <br /><br />
+        </div>
+
+        <label for="feedback">Enter a message (optional):</label>
+        <input class="input" type="text" id="feedback" />
+        <input
+          onclick="submitButton()"
+          type="submit"
+          class="button"
+          value="Submit"
+        />
+      </form>
+    </div>
+    <my-footer></my-footer>
+  </body>
+</html>

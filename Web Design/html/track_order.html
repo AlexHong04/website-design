@@ -1,0 +1,63 @@
+ <!-- Author: Tan Kok Hong
+Date:   12/9/2023
+
+Filename: track_order.css  -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Track Order</title>
+    <link href="../css/style.css" rel="stylesheet" />
+    <link href="../css/track_order.css" rel="stylesheet" />
+    <script src="../js/header_footer.js" rel="stylesheet"></script>
+  </head>
+
+  <body>
+    <my-header></my-header>
+    <div class="container py-6">
+        <div class="border-details">
+          <div class="order">
+            <h1>Order <span>NO. </span> #431267678</h1>
+          </div>
+          <div class="date">
+            <p>Expexted Arrival date</p>
+            <p>number <b>123456789</b></p>
+          </div>
+        </div>
+        <div>
+          <ul id="progress">
+            <li class="active"></li>
+            <li class="active"></li>
+            <li class="active"></li>
+            <li class="active"></li>
+          </ul>
+        </div>
+        <div class="step-list">
+          <div class="step-list-item">
+            <img src="../images/Order Placed.png" alt="Procesed" />
+            <span class="label"><b>Order<br/>Placed</b></span>
+          </div>
+          <div class="step-list-item">
+            <img src="../images/Order Paided.png" alt="shipped" />
+            <span class="label"><b>Order<br/>Paided</b></span>
+          </div>
+          <div class="step-list-item">
+            <img src="../images/mail.png" alt="Enroute" />
+            <span class="label"><b>Email<br/>sent</b></span>
+          </div>
+          <div class="step-list-item">
+            <img src="../images/complete.png" alt="Arrived" />
+            <span class="label"><b>Completed<br/></b></span>
+          </div>
+        </div>
+        <div class="btn">
+          <button class="button" type="submit" onclick="location.href='delivery.html'">Back</button>
+          &nbsp;
+          <button class="button" type="submit" onclick="location.href='home.html'">Back to home</button>
+        </div>
+    </div>
+    <my-footer class="py-6"></my-footer>
+  </body>
+</html>

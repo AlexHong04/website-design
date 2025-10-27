@@ -1,0 +1,59 @@
+.contactWrapper {
+  height: 825px;
+  position: relative;
+  background-image: linear-gradient(to bottom right, white, lightpink, red);
+  margin-bottom: 6%;
+}
+
+.contactHeader {
+  width: 550px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3%;
+  padding: 2%;
+}
+
+.contactWrapper form {
+  width: 550px;
+  height: 435px;
+  background-color: rgb(243, 243, 243);
+  border-radius: 2%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1%;
+  padding: 2%;
+}
+
+.innerForm {
+  margin: 5%;
+}
+
+.contactWrapper input {
+  width: 95%;
+  border-radius: 5px;
+  padding: 15px;
+  padding-right: 0px;
+  margin-bottom: 15px;
+  border: 1px solid black;
+}
+
+.innerForm p {
+  margin: -2%;
+}
+
+textarea {
+  width: 481px;
+  height: 60px;
+}
+
+#submit {
+  margin-top: 2%;
+  background-color: red;
+  font-size: medium;
+  color: white;
+  border-color: white;
+  padding: 2%;
+  display: block;
+  width: 98%;
+}

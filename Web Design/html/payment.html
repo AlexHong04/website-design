@@ -1,0 +1,169 @@
+<!-- 
+    Author: Tan Kok Hong
+    Date:   12/8/2023
+   
+    Filename: payment.html -->
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="./../css/style.css" rel="stylesheet">
+        <link href="./../css/payment.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.28/dist/sweetalert2.all.min.js"></script>
+        <!-- <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.28/dist/sweetalert2.min.css" rel="stylesheet"> -->
+        <title>payment</title> 
+        <script type=module src=../js/header_footer.js></script>
+    </head>
+    <body>
+        <my-header></my-header>
+        <div class="container">
+            <form onclick="" id="form_submit" name="form" >
+                <div class="border">
+                    <div class="border-details">
+                        <h3 class="title">billing details</h3>
+                        <div>
+                            <label for="f_name">Full Name* :</label>
+                            <input name="f_name" id="f_name" type="text" placeholder="Enter your full name" required/>
+                        </div>
+                        <div>
+                            <label for="e_mail">E-mail* :</label>
+                            <input name="e_mail" id="e_mail" type="email" placeholder="Abc@gmail.com" required/>
+                        </div>
+                        <div>
+                            <label for="address">Address* :</label>
+                            <input name="address" id="address" type="text" placeholder="Enter your address" required/>
+                        </div>
+                        <div>
+                            <label for="city">City* :</label>
+                            <input name="city" id="city" type="text" placeholder="Enter your city" required/>
+                        </div>
+                        <div>
+                            <label for="state">state* :</label>
+                            <input name="state" id="state" type="text" placeholder="Enter your state" required/>
+                        </div>
+                        <div>
+                            <label for="Z_code">Zip code* :</label>
+                            <input name="Z_code" id="Z_code" type="text" placeholder="Enter your Zipcode" required/>
+                        </div>
+                    </div>
+                    <div class="border-details">        
+                        <h3 class="title">payment</h3>
+                        <div>
+                            <label for="C_accept">Cards accepted* :</label>
+                            <select class="Cards" required="" >
+                                <option value="" disabled selected>Select Your Card</option>
+                                <option value="Visa">Visa</option>
+                                <option value="CreditCard" >Credit Card</option>
+                                <option value="Debit Card">Debit Card</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="N_card">Name on Card* :</label>
+                            <input name="N_card" id="N_card" type="text" placeholder="Write your Name Card" required/>
+                        </div>
+                        <div>
+                            <label for="C_card"> Card Number* :</label>
+                            <input name="C_card" id="C_card" type="text" placeholder="Write your Credit Card Number" required/>
+                        </div>
+                        <div>
+                            <label for="E_month">Exp Month* :</label>
+                            <input name="E_month" id="E_month" type="month" required/>
+                        </div>
+                        <div>
+                            <label for="P_number">Phone Number* :</label>
+                            <input name="P_number" id="P_number" type="text" placeholder="(XXX-XXXXXXXX)" required/>
+                        </div>
+                        <div>
+                            <label for="CVV">CVV* :</label>
+                            <input name="CVV" id="CVV" type="text" placeholder="Write your CVV" required/>
+                        </div>
+                    </div>
+                </div>
+                <div class="checkout py-2">
+                    <table class="checkoutborder">
+                        <h2 class="subtitile">Your Order</h2>
+                        <thead>
+                            <th>Product</th>
+                            <td>subtotal</td>
+                        </thead>
+                        <tbody>
+                            <tr class="cart_item">
+                            <td class="product-name">
+                                ZOO Negara in Kuala Lumpur&nbsp;<strong class="product-quantity">×&nbsp;1</strong>											
+                            </td>
+                            <td class="product-total">
+                                <span class=""><bdi><span class="">RM</span>35.00</bdi></span>
+                    		</td>
+                            </tr>
+                            <tr class="cart_item">
+                            <td class="product-name">
+                                MAHA Tower Ticket in Langkawi&nbsp;<strong class="product-quantity">×&nbsp;1</strong>											
+                            </td>
+                            <td class="product-total">
+                                <span class=""><bdi><span class="">RM</span>35.00</bdi></span>
+                            </td>
+                            </tr>
+                            <tr class="cart_item">
+                            <td class="product-name">
+                                LEGOLAND in Johor Bahru&nbsp;<strong class="product-quantity">×&nbsp;1</strong>											
+                            </td>
+                            <td class="product-total">
+                                <span class=""><bdi><span class="">RM</span>90.00</bdi></span>
+                            </td>
+                            </tr>
+                            <tr class="cart_item">
+                            <td class="product-name">
+                                A-famosa in Melaka&nbsp;<strong class="product-quantity">×&nbsp;1</strong>											
+                            </td>
+                            <td class="product-total">
+                                <span class=""><bdi><span class="">RM</span>45.00</bdi></span>
+                            </td>
+                            </tr>
+                            <tr class="cart_item">
+                            <td class="product-name">
+                                Bird Park in Penang&nbsp;<strong class="product-quantity">×&nbsp;1</strong>											
+                            </td>
+                            <td class="product-total">
+                                <span class=""><bdi><span class="">RM</span>45.00</bdi></span>
+                            </td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <th>Subtotal</th>
+                                <td data-title="Subtotal">RM250</td>
+                            </tr>
+                            <tr class="totals-Service">
+                                <th>Service</th>
+                                <td data-title="Service">
+                                    <ul id="Service" class="Service-methods">
+                                        <input name="Tax" id="Tax" type="checkbox" value="15" required/>
+                                        <label for="Tax">Tax: <span>RM</span>15</span></label>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Total</th>
+                                <td data-title="total">RM265</td>
+                            </tr>   
+                        </tfoot>                                                         
+                    </table>
+                    <div class="agree py-3">
+                    <input type="checkbox" class="" name="terms" id="terms">
+	                <span>I agree with the terms and conditions</span>&nbsp;<abbr class="required" title="required">*</abbr>
+                    </div>
+                </div>
+
+                <div class="btn">
+                    <button type="reset" class="button" id="btn-resit">Reset</button>
+                    &nbsp;
+                    <button type="submit" class="button" id="btn-submit" onclick="checkbox()">Submit</button>
+                </div>
+            </form>
+        </div>
+    <script src="../js/payment.js"></script>
+    <my-footer></my-footer>
+    </body>
+</html>

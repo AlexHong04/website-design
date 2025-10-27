@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="./../css/contact_us.css" />
+    <script src="./../js/header_footer.js"></script>
+  </head>
+  <body>
+    <my-header></my-header>
+    <div class="contactWrapper">
+      <div class="contactHeader">
+        <h1>Contact Us</h1>
+        <p>
+          Thanks for using our website to book your staycation! We hope that you
+          have found your destination. If not, feel free to contact us using the
+          method below.
+        </p>
+        <a href="tel:6012-1234567">Call 6012-1234567</a>
+        <br />
+        <a href="mailto: abc@example.com">abc@example.com</a>
+      </div>
+      <form action="#">
+        <div class="innerForm">
+          <label for="name">Name*:</label>
+          <input class="input" type="text" id="name" required /> <br />
+          <label for="email">E-mail*:</label>
+          <input class="input" type="email" id="email" required /> <br />
+          <label for="p_number">Phone*:</label>
+          <input class="input" type="tel" id="p_number" required /><br />
+          <label>Message*:</label>
+          <br />
+          <textarea name="message" id="message"></textarea>
+          <input type="submit" id="submit" value="Submit" />
+        </div>
+      </form>
+    </div>
+  </body>
+  <my-footer></my-footer>
+</html>

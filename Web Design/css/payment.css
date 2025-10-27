@@ -1,0 +1,126 @@
+    /* Author: Tan Kok Hong
+    Date:   12/8/2023
+   
+    Filename: payment.css */
+.container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+}
+
+.container form{
+    box-sizing: border-box;
+    padding: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-right: 50px;
+    width: 1000px;
+    background:rgb(243,243,243) ;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+
+}
+
+.container form .border{
+    display: flex;
+    flex-wrap:wrap ;
+    gap: 15px;
+}
+
+.container form .border-details{
+    flex: 1 1 250px;
+}
+
+.container form .border-details .title{
+    font-size: 25px;
+    color: #333;
+    padding-bottom:5px;
+    text-transform: uppercase;
+
+}
+
+.container form .border label{
+    margin: 20px 0;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.container form .border input{
+    width: 300px;
+    border: 1px solid;
+    border-color: #ccc;
+    padding: 10px 15px;
+    font-size: 15px;
+    text-transform: none;
+    border-radius: 10px;
+}
+
+.container form .border select{
+    width:330px;
+    border:1px solid;
+    border-color: #ccc;
+    padding: 10px 15px;
+    font-size: 15px;
+    text-transform: none;
+    border-radius: 10px;
+}
+
+/* Your Order */
+.subtitile{
+    text-align: center;
+}
+
+.checkoutborder{
+    position: relative;
+    width: 95%;
+    height: 300px;
+    background:rgb(243,243,243) ;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+}
+
+table{
+    width:50%;
+    border-collapse: collapse;
+    border:2px solid rgb(243, 243, 243) ;
+    text-align: center;
+}
+
+th,td{
+    border:1px solid #ccc;
+    padding:3px;
+    border-inline:unset;
+}
+
+tr{
+    height: 70px;
+}
+
+.agree{
+    font-size: 15px;
+    font-style: italic;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.button {
+    border: white;
+    color: white;
+    padding: 10px 30px;
+    font-size: 16px;
+    background-color: rgb(255, 76, 76);
+    border: 2px solid rgb(255, 76, 76);
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.button:hover {
+    background-color:white;
+    color:rgb(255, 76, 76);
+}
+
+

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html class="html">
+<head>
+    <meta charset="UTF-8" />
+    <meta  name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <title>Look Travel - Activities, tour, attraction and things to do</title>
+    <link href="./../css/layouts.css" rel="stylesheet"/>
+    <script src="./../js/header_footer.js"></script>
+</head>
+<style>
+    .container{
+    width: 95%;
+    height: 950px;
+    border: 0px solid;
+    border-radius: 0%;  
+    padding: 25px;   
+    background-color: rgb(208, 228, 235);
+    margin-bottom: 100px ;
+    margin-top: 100;
+    }
+    button {   
+               background-color: #4CAF50;   
+               width: 100%;  
+                color: rgb(255, 255, 255);   
+                padding: 15px;   
+                margin: 10px 0px;   
+                border: none;   
+                cursor: pointer;   
+                 }   
+
+    .animation a:hover{
+            background-color: #ddd;
+            color: rgb(198, 82, 82);
+            text-shadow: rgba(0,0,0,0.5) 0px 15px 4px;
+            transform: scale(1,1) translateY(-15px);
+                 }
+
+                 h1{
+                  color: #0077cc;
+                 }
+</style>
+<my-header></my-header>
+  <center><h1>Renew Membership</h1></center>
+  <form>
+      <div class="container">
+          <label>First Name :</label>
+          <input type="text"placeholder="Enter First Name" name="FirstName" required>
+          <label>Last Name :</label>
+          <input type="text"placeholder="Enter Last Name" name="Last Name" required>
+          <label>Address Line 1</label>
+          <input type="text" placeholder="Enter Address Line 1" name="Address Line 1" required>
+          <label>Address Line 2</label>
+          <input type="text" placeholder="Enter Address Line 1" name="Address Line 2" >
+          <label>Address Line 3</label>
+          <input type="text" placeholder="Enter Address Line 1" name="Address Line 3" >
+          <label>Postal Code</label>
+          <input type="text" placeholder="Enter Postal Code" name="Postal Code" required>
+          <label>State</label>
+          <input type="text" placeholder="Enter State" name="State" required>
+          <label>City</label>
+          <input type="text" placeholder="Enter City" name="City" required>
+          <label>Phone number</label>
+          <input type="text" placeholder="Enter Phone number" name="phone number" required>
+          <label>E-mail</label>
+          <input type="text" placeholder="Enter E-mail" name="E-mail" required>
+          <label>Please select your renew year ( 1 - 3) :</label>
+          <input type="text" placeholder="Enter Year" name="Year" required>
+          <button type="submit" class="animation">renew</button></a>
+          <p> * If you want to return to the home page, please click the logo. </p>
+      </div>
+  </form>
+<my-footer></my-footer>
+</body>
+
+</html>

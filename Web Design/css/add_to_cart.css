@@ -1,0 +1,112 @@
+ /* Author: Tan Kok Hong
+Date:   15/9/2023
+
+Filename: addtocart.css */
+
+
+table{
+    width:50%;
+    border-collapse: collapse;
+    border:2px solid rgb(243, 243, 243) ;
+    text-align: center;
+}
+
+th,td{
+    border:1px solid #ccc;
+    padding:3px;
+    border-inline:unset;
+}
+
+/* img */
+.header {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.border-header{
+    width: 100%;
+    height: 50px;
+    font-size: 22px;
+}
+
+.overlay{
+    width: 100%;
+    height: 75%;
+    position: absolute;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+}
+
+.header > img.headerBanner {
+    width: 100%;
+    height: 75%;
+    position: absolute;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+}
+
+.header > h1 {
+    font-size: xx-large;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    margin: 0;
+    line-height: 400px;
+    color: white;
+}
+
+/* product price qty subtotal border */
+.border{
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background:rgb(243,243,243) ;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+/* remove */
+.product-remove .remove{
+    text-decoration: none;
+}
+
+/* cart total */
+.checkoutborder{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background:rgb(243,243,243) ;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.checkoutborder .totals-Service{
+    height: 100px;
+}
+
+th{
+    font-size: 22px;
+}
+
+.title{
+    text-align: center;
+}
+
+.submit-btn {
+    border: white;
+    color: white;
+    padding: 10px 30px;
+    font-size: 16px;
+    margin: 20px 450px;
+    background-color: rgb(255, 76, 76);
+    border: 2px solid rgb(255, 76, 76);
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.submit-btn:hover {
+    background-color:white;
+    color:rgb(255, 76, 76);
+}

@@ -1,0 +1,106 @@
+    /* Author: Tan Kok Hong
+    Date:   12/9/2023
+   
+    Filename: track_order.css */
+
+.border-details{
+    display:flex;
+    gap: 1em;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.order h1{
+    text-transform: uppercase;
+}
+
+.date p{
+    font-size: 1.1em;
+}
+
+#progress{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-weight: bold;
+    position: relative;
+    text-align: center;
+}
+
+#progress li{
+    width: 200px;
+    position: relative;
+    margin-bottom: 100px;
+}
+
+#progress li::before{
+    content: '\2713';
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 50px;
+    align-items: center;
+    font-size: 3em;
+    height: 50px;
+    background-color: rgb(253, 153, 60) ;
+    color:honeydew;
+    border-radius: 50px;
+}
+
+
+#progress::before{
+    content: '';
+    position: absolute;
+    top: 20px;
+    width: 800px;
+    height: 10px;
+    background-color:  rgb(253, 153, 60) ;
+}
+
+.step-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    align-items: center;
+}
+
+.step-list-item{
+    display: flex;
+    gap: 2em;
+    flex: 1 1 50px;
+    align-items:center;
+}
+
+.step-list-item .label{
+    font-size: 1em;
+}
+
+.step-list-item img{
+    width: 50px;
+    margin-left: 40px;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+button {
+    border: white;
+    color: white;
+    padding: 10px 30px;
+    font-size: 16px;
+    font-style: italic;
+    background-color: rgb(255, 76, 76);
+    border: 2px solid rgb(255, 76, 76);
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 100px;
+} 
+
+.button:hover {
+    background-color:white;
+    color:rgb(255, 76, 76);
+}
